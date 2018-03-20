@@ -1,0 +1,53 @@
+body {
+  margin: 0 0 50px 0;
+  font-family: 'IBM Plex Mono', monospace;
+  background: #A1FFCE;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FAFFD1, #A1FFCE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.posts-card img {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+.card {
+  border-radius: 0;
+  border: none;
+}
+.posts-card  {
+  width: 100%;
+  min-height: 200px;
+  border-radius: none;
+  border-left: 3px solid black;
+  transition: border-width 0.2s;
+}
+.posts-card:hover {
+  border-left-width: 10px;
+  cursor: pointer;
+  background-color: rgba(248, 249, 250, 0.2);
+}
+.card, .posts-card {
+  background: transparent;
+}
+.posts-card > *  {
+  color: black;
+}
+.posts-card .card {
+  height: 100%;
+}
+
+.posts-card .card-img {
+  border-radius: 0;
+  opacity: 0.4;
+}
+.posts-card .posts-markdown {
+  max-height: 80px;
+  overflow-y: hidden;
+}
+
+.markdown-content img {
+  max-height: 400px;
+  width: auto;
+}
